@@ -1,0 +1,97 @@
+.contact {
+  width: 100%;
+  padding-top: 80px;
+  height: 100%;
+  min-height: 90vh;
+  padding-bottom: 50px;
+
+  .heading {
+    font-size: 40px;
+    margin: 0 auto 20px;
+    text-align: center;
+
+    span {
+      color: rgb(59, 59, 173);
+    }
+  }
+
+  .contactMe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto 200px;
+    gap: 60px;
+    flex-wrap: wrap;
+
+    .work {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+
+      h1 {
+        font-size: 40px;
+        text-align: center;
+      }
+      .socials {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .social {
+          transform: scale(1);
+          transition: all 400ms;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+
+    .form {
+      flex: 1;
+      min-width: 320px;
+      max-width: 450px;
+
+      form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 5px;
+
+        input,
+        textarea,
+        button {
+          width: 100%;
+          padding: 20px;
+          background: inherit;
+          color: white;
+          outline: 0;
+          border-radius: 12px;
+          border: 1px solid gray;
+        }
+
+        .btn {
+          cursor: pointer;
+
+          &:hover {
+            color: rgb(59, 59, 173);
+          }
+        }
+      }
+
+      .error {
+        color: red;
+        text-align: center;
+      }
+
+      .success {
+        color: green;
+        text-align: center;
+      }
+    }
+  }
+}
