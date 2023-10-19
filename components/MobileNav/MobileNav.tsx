@@ -1,7 +1,7 @@
-import React from "react";
-import { navLinks } from "../Navbar/constants";
-import Image from "next/image";
-import styles from "./MobileNav.module.scss";
+import React from 'react';
+import { navLinks } from '../Navbar/constants';
+import Image from 'next/image';
+import styles from './MobileNav.module.scss';
 
 const MobileNav = () => {
   return (

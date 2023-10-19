@@ -1,5 +1,5 @@
-import styles from "./Navbar.module.scss";
-import { navLinks } from "./constants";
+import styles from './Navbar.module.scss';
+import { navLinks } from './constants';
 
 const Navbar = () => {
   return (

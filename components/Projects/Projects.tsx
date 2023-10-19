@@ -1,6 +1,6 @@
-import styles from "./Projects.module.scss";
-import ProjectCard from "./ProjectCard";
-import { projectTimeline } from "./constants";
+import styles from './Projects.module.scss';
+import ProjectCard from './ProjectCard';
+import { projectTimeline } from './constants';
 
 const Projects = () => {
   return (
