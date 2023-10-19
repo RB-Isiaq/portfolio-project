@@ -1,6 +1,6 @@
-import Image from "next/image";
-import styles from "./Hero.module.scss";
-import Profile from "@/public/myself-bg.png";
+import Image from 'next/image';
+import styles from './Hero.module.scss';
+import Profile from '@/public/myself-bg.png';
 
 const Hero = () => {
   return (

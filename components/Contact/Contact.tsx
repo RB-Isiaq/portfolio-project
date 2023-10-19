@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import { useRef, useState } from "react";
-import Image from "next/image";
-import styles from "./Contact.module.scss";
-import emailjs from "@emailjs/browser";
+import { useRef, useState } from 'react';
+import Image from 'next/image';
+import styles from './Contact.module.scss';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const formRef = useRef<HTMLFormElement | null>(null);
@@ -16,10 +16,10 @@ const Contact = () => {
     if (formRef.current) {
       emailjs
         .sendForm(
-          "service_tl70x2r",
-          "template_pccn9vs",
+          'service_tl70x2r',
+          'template_pccn9vs',
           formRef.current,
-          "k2UtwwjyErqh6ute5"
+          'k2UtwwjyErqh6ute5',
         )
         .then(
           (result) => {
@@ -29,7 +29,7 @@ const Contact = () => {
           (error) => {
             setError(true);
             console.log(error);
-          }
+          },
         );
     }
   };
