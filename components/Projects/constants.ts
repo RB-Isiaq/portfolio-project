@@ -47,7 +47,7 @@ export const projectTimeline: IProject[] = [
     live: 'https://fashionique.vercel.app/',
   },
   {
-    id: 4,
+    id: 6,
     title: 'Hoobank',
     description:
       'A mobile responsive landing page created with Nextjs, styled with tailwindcss and animated with framer motion.',
@@ -56,3 +56,9 @@ export const projectTimeline: IProject[] = [
     live: 'https://bank-web-page.vercel.app/',
   },
 ];
+
+export const TestId = {
+  PROJECTS_ID: 'projects_id',
+  PROJECTS_CONTAINER_ID: 'project_container_id',
+  PROJECT_ID: 'project_id',
+};

@@ -21,3 +21,10 @@ export const tools: ITool[] = [
 ];
 
 export const about = `I am a dedicated and passionate frontend developer who takes pride in crafting visually stunning websites and web applications. With an unwavering commitment to personal growth, a meticulous eye for detail, and a knack for creative problem-solving, I bring a unique perspective to every project. My approach is grounded in efficiency and simplicity, always with a laser focus on delivering exceptional user experiences.\nI possess a strong technical proficiency in a wide array of tools and technologies, including ReactJS, NextJs, and Typescript. I am enthusiastic about further honing my skills and consistently delivering top-notch websites and web applications. My goal is to contribute to the success of every project I'm involved in and to help organizations achieve their goals.`;
+
+export const TestId = {
+  ABOUT_ID: 'about',
+  ABOUT_DESC: 'description',
+  TOOLS: 'tools__container',
+  TOOL: 'tool',
+};
