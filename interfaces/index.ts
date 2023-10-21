@@ -15,4 +15,5 @@ export interface IProject {
   description: string;
   github: string;
   live: string;
+  dataType?: string;
 }

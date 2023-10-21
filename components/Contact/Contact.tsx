@@ -4,6 +4,7 @@ import { useRef, useState } from 'react';
 import Image from 'next/image';
 import styles from './Contact.module.scss';
 import emailjs from '@emailjs/browser';
+import { TestId } from './constants';
 
 const Contact = () => {
   const formRef = useRef<HTMLFormElement | null>(null);
@@ -35,7 +36,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className={styles.contact}>
+    <section id="contact" className={styles.contact} data-testid={TestId.CONTACT_ID}>
       <h1 className={styles.heading}>
         Contact <span>Me</span>
       </h1>
@@ -96,7 +97,7 @@ const Contact = () => {
           </div>
         </div>
         <div className={styles.form}>
-          <form ref={formRef} onSubmit={sendEmail}>
+          <form ref={formRef} onSubmit={sendEmail} data-testid={TestId.FORM}>
             <input
               required
               type="text"
@@ -119,7 +120,7 @@ const Contact = () => {
               cols={10}
               name="message"
             />
-            <button className={styles.btn}>Contact Me</button>
+            <button className={styles.btn} data-testid={TestId.BTN}>Contact Me</button>
           </form>
           {error && <p className={styles.error}>An error occured</p>}
           {success && <p className={styles.success}>Sent succesfully 👍</p>}

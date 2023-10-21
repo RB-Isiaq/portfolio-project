@@ -9,7 +9,7 @@ import MobileNav from '@/components/MobileNav/MobileNav';
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <main className={styles.main} data-testid="home_page">
       <Container>
         <Navbar />
         <MobileNav />
