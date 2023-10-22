@@ -13,7 +13,7 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
 
     .name {
       font-size: 50px;
@@ -25,6 +25,10 @@
     .profession {
       h1 {
         font-size: 70px;
+        background-image: linear-gradient(to right, #00ffd5, #0075fa, #db0794);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
       }
       h2 {
         font-size: 20px;
@@ -64,6 +68,7 @@
   @media only screen and (max-width: 712px) {
     padding-top: 50px;
     .details {
+      gap: 15px;
       .name {
         font-size: 30px;
       }
